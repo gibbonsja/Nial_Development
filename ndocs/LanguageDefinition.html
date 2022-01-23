@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>The Nial Language Manual - Nial Array Language Website</title>
+<!-- begin _includes/seo.html --><title>The Nial Language Manual - Nial Array Language</title>
 <meta name="description" content="Nial Community Site">
 
 
@@ -19,9 +19,9 @@
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Nial Array Language Website">
+<meta property="og:site_name" content="Nial Array Language">
 <meta property="og:title" content="The Nial Language Manual">
-<meta property="og:url" content="https://gibbonsja.github.io//Nial_Development/ndocs/LanguageDefinition.html">
+<meta property="og:url" content="http://localhost:4000/ndocs/LanguageDefinition.html">
 
 
   <meta property="og:description" content="Nial Community Site">
@@ -41,7 +41,7 @@
   
 
 
-<link rel="canonical" href="https://gibbonsja.github.io//Nial_Development/ndocs/LanguageDefinition.html">
+<link rel="canonical" href="http://localhost:4000/ndocs/LanguageDefinition.html">
 
 
 
@@ -52,7 +52,7 @@
     
       "@type": "Person",
       "name": "John Gibbons",
-      "url": "https://gibbonsja.github.io//Nial_Development/"
+      "url": "http://localhost:4000/"
     
   }
 </script>
@@ -67,7 +67,7 @@
 
 
 
-  <link href="/Nial_Development/feed.xml" type="application/atom+xml" rel="alternate" title="Nial Array Language Website Feed">
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Nial Array Language Feed">
 
 
 <!-- https://t.co/dKP3o1e -->
@@ -78,7 +78,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/Nial_Development/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/main.css">
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
 
@@ -112,22 +112,19 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-          <a class="site-logo" href="/Nial_Development/"><img src="/Nial_Development/assets/images/NialLogo.jpg" alt="Nial Array Language Website"></a>
+          <a class="site-logo" href="/"><img src="/assets/images/Longboat.png" alt="Nial Array Language"></a>
         
-        <a class="site-title" href="/Nial_Development/">
-          Nial Array Language Website
+        <a class="site-title" href="/">
+          Nial Array Language
           
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/Nial_Development/">Home</a>
+              <a href="/">Home</a>
             </li><li class="masthead__menu-item">
-              <a href="/Nial_Development/ndocs/">Documentation</a>
+              <a href="/download/">Download</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ndocs/">Documentation</a>
             </li></ul>
-        
-        <button class="search__toggle" type="button">
-          <span class="visually-hidden">Toggle search</span>
-          <i class="fas fa-search"></i>
-        </button>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
@@ -156,7 +153,7 @@
     
       
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="/Nial_Development/" itemprop="item"><span itemprop="name">Home</span></a>
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
 
           <meta itemprop="position" content="1" />
         </li>
@@ -165,7 +162,7 @@
       
         
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="/Nial_Development/ndocs" itemprop="item"><span itemprop="name">Ndocs</span></a>
+          <a href="/ndocs" itemprop="item"><span itemprop="name">Ndocs</span></a>
           <meta itemprop="position" content="2" />
         </li>
         <span class="sep">/</span>
@@ -196,7 +193,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="https://gibbonsja.github.io//Nial_Development/ndocs/LanguageDefinition.html" class="u-url" itemprop="url">The Nial Language Manual
+            <a href="http://localhost:4000/ndocs/LanguageDefinition.html" class="u-url" itemprop="url">The Nial Language Manual
 </a>
           </h1>
           
@@ -210,20 +207,14 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
-              <ul class="toc__menu"><li><a href="#the-language-definition">The Language Definition</a><ul><li><a href="#version-63">Version 6.3</a></li></ul></li><li><a href="#chapter-1-introduction">Chapter 1 Introduction</a></li><li><a href="#language-concepts-and-terminology">Language Concepts and Terminology</a><ul><li><a href="#the-objects-of-nial">The Objects of Nial</a></li></ul></li><li><a href="#chapter-2-data-objects">Chapter 2 Data Objects</a><ul><li><a href="#atomic-arrays">Atomic Arrays</a></li><li><a href="#rectangularity-structure">Rectangularity Structure</a></li><li><a href="#nesting-structure">Nesting Structure</a></li><li><a href="#empty-arrays">Empty Arrays</a></li><li><a href="#array-diagrams">Array Diagrams</a></li></ul></li><li><a href="#chapter-3-predefined-data-operations">Chapter 3 Predefined Data Operations</a></li><li><a href="#-properties-of-data"># Properties of Data</a><ul><li><a href="#logic-operations">Logic Operations</a></li><li><a href="#arithmetic-operations">Arithmetic Operations</a></li><li><a href="#linear-algebra-operations">Linear Algebra Operations</a></li><li><a href="#comparison-operations">Comparison Operations</a></li><li><a href="#type-testing-operations">Type Testing Operations</a></li><li><a href="#set-like-operations">Set-like Operations</a></li><li><a href="#conversion-operations">Conversion Operations</a></li><li><a href="#structure-testing-operations">Structure Testing Operations</a></li><li><a href="#measurement-operations">Measurement Operations</a></li><li><a href="#array-construction-operations">Array Construction Operations</a></li><li><a href="#reshaping-operations">Reshaping Operations</a></li><li><a href="#array-generation-operations">Array Generation Operations</a></li><li><a href="#selection-operations">Selection Operations</a></li><li><a href="#insertion-operations">Insertion Operations</a></li><li><a href="#searching-operations">Searching Operations</a></li><li><a href="#nesting-restructuring-operations">Nesting Restructuring Operations</a></li><li><a href="#data-rearrangement-operations">Data Rearrangement Operations</a></li><li><a href="#string-manipulation-operations-using-regular-expressions">String Manipulation Operations using Regular Expressions</a></li></ul></li><li><a href="#chapter-4-predefined-transformers">Chapter 4 Predefined Transformers</a><ul><li><a href="#each-and-related-transformers">Each and Related Transformers</a></li><li><a href="#partitioning-transformers">Partitioning Transformers</a></li><li><a href="#applicative-transformers">Applicative Transformers</a></li><li><a href="#sorting-transformers">Sorting Transformers</a></li><li><a href="#reduction-transformers">Reduction Transformers</a></li><li><a href="#control-structure-transformers">Control Structure Transformers</a></li><li><a href="#selection-transformer">Selection Transformer</a></li></ul></li><li><a href="#chapter-5-the-formal-description-of-nial-programs">Chapter 5 The Formal Description of Nial Programs</a><ul><li><a href="#environment">Environment</a></li><li><a href="#action">Action</a></li><li><a href="#definition">Definition</a></li><li><a href="#external-declaration">External Declaration</a></li><li><a href="#remark">Remark</a></li><li><a href="#array-expression">Array Expression</a></li><li><a href="#expression-sequence">Expression Sequence</a></li><li><a href="#simple-expression">Simple Expression</a></li><li><a href="#primary-expressions">Primary Expressions</a></li><li><a href="#constant">Constant</a></li><li><a href="#variable">Variable</a></li><li><a href="#scope-of-a-variable">Scope of a Variable</a></li><li><a href="#indexed-variable">Indexed Variable</a></li><li><a href="#named-expression">Named Expression</a></li><li><a href="#expression-list">Expression List</a></li><li><a href="#parenthesized-expression-sequence">Parenthesized Expression Sequence</a></li><li><a href="#block">Block</a></li><li><a href="#local-and-nonlocal-declaration">Local and Nonlocal Declaration</a></li><li><a href="#nested-definition">Nested Definition</a></li><li><a href="#cast">Cast</a></li><li><a href="#assign-expression">Assign Expression</a></li><li><a href="#selection-expression">Selection Expression</a></li><li><a href="#loop-expression">Loop Expression</a></li><li><a href="#comment">Comment</a></li><li><a href="#operation-expression">Operation Expression</a></li><li><a href="#simple-operation">Simple Operation</a></li><li><a href="#operation-form">Operation Form</a></li><li><a href="#transformer-expression">Transformer Expression</a></li><li><a href="#transformer-form">Transformer Form</a></li><li><a href="#summary-of-juxtapositional-syntax">Summary of Juxtapositional Syntax</a></li><li><a href="#synonyms">Synonyms</a></li></ul></li><li><a href="#chapter-6-file-input-and-output-operations">Chapter 6 File Input and Output Operations</a><ul><li><a href="#sequential-files">Sequential Files</a></li><li><a href="#qnial-specific-direct-access-file-operations">Q’Nial Specific Direct Access File Operations</a></li><li><a href="#direct-access-operations-for-host-files">Direct Access Operations for Host Files</a></li></ul></li><li><a href="#chapter-7-operations-for-the-interpreter-mechanisms">Chapter 7 Operations for the Interpreter Mechanisms</a><ul><li><a href="#top-level-loop">Top Level Loop</a></li><li><a href="#picture-operations">Picture Operations</a></li><li><a href="#phrases-names-and-casts">Phrases, Names and Casts</a></li><li><a href="#dynamic-execution-of-name-associations">Dynamic Execution of Name Associations</a></li></ul></li><li><a href="#chapter-8-management-of-the-programming--environment">Chapter 8 Management of the Programming  Environment</a><ul><li><a href="#the-qnial-programming-environment">The Q’Nial Programming Environment</a></li><li><a href="#invoking-qnial">Invoking Q’Nial</a></li><li><a href="#naming-the-latest-result">Naming the Latest Result</a></li><li><a href="#session-related-expressions-and-operations">Session Related Expressions and Operations</a></li><li><a href="#restarting-a-qnial-session">Restarting a Q’Nial Session</a></li><li><a href="#ending-a-qnial-session">Ending a Q’Nial Session</a></li><li><a href="#interrupts-and-error-recovery">Interrupts and Error Recovery</a></li><li><a href="#fault-triggering">Fault Triggering</a></li><li><a href="#workspace-management">Workspace Management</a></li><li><a href="#saving-and-loading-the-workspace">Saving and Loading the Workspace</a></li><li><a href="#loading-a-definition-file">Loading a Definition File</a></li><li><a href="#setting-workspace-switches">Setting Workspace Switches</a></li><li><a href="#workspace-status">Workspace Status</a></li><li><a href="#symbol-table">Symbol Table</a></li><li><a href="#logging-the-work-of-the-session">Logging the Work of the Session</a></li><li><a href="#time-related-expressions">Time Related Expressions</a></li><li><a href="#display-related-settings">Display Related Settings</a></li><li><a href="#real-number-formatting">Real Number Formatting</a></li><li><a href="#system-related-expressions">System Related Expressions</a></li><li><a href="#host-interface-operations">Host Interface Operations</a></li><li><a href="#session-and-workspace-variables">Session and Workspace Variables</a></li></ul></li><li><a href="#chapter-9-debugging-and-profiling-nial-definitions">Chapter 9 Debugging and Profiling Nial Definitions</a><ul><li><a href="#debugging-definitions">Debugging Definitions</a></li><li><a href="#defining-a-break-point">Defining a Break Point</a></li><li><a href="#access-to-intermediate-scopes">Access to Intermediate Scopes</a></li><li><a href="#debugging-commands">Debugging Commands</a></li><li><a href="#repeating-debug-commands">Repeating Debug Commands</a></li><li><a href="#monitoring-execution-flow">Monitoring Execution Flow</a></li><li><a href="#watch-mechanism">Watch Mechanism</a></li><li><a href="#trace-mechanism">Trace Mechanism</a></li><li><a href="#profiling-capability">Profiling Capability</a></li></ul></li></ul>
+              <ul class="toc__menu"><li><a href="#chapter-1-introduction">Chapter 1 Introduction</a></li><li><a href="#language-concepts-and-terminology">Language Concepts and Terminology</a><ul><li><a href="#the-objects-of-nial">The Objects of Nial</a></li></ul></li><li><a href="#chapter-2-data-objects">Chapter 2 Data Objects</a><ul><li><a href="#atomic-arrays">Atomic Arrays</a></li><li><a href="#rectangularity-structure">Rectangularity Structure</a></li><li><a href="#nesting-structure">Nesting Structure</a></li><li><a href="#empty-arrays">Empty Arrays</a></li><li><a href="#array-diagrams">Array Diagrams</a></li></ul></li><li><a href="#chapter-3-predefined-data-operations">Chapter 3 Predefined Data Operations</a></li><li><a href="#-properties-of-data"># Properties of Data</a><ul><li><a href="#logic-operations">Logic Operations</a></li><li><a href="#arithmetic-operations">Arithmetic Operations</a></li><li><a href="#linear-algebra-operations">Linear Algebra Operations</a></li><li><a href="#comparison-operations">Comparison Operations</a></li><li><a href="#type-testing-operations">Type Testing Operations</a></li><li><a href="#set-like-operations">Set-like Operations</a></li><li><a href="#conversion-operations">Conversion Operations</a></li><li><a href="#structure-testing-operations">Structure Testing Operations</a></li><li><a href="#measurement-operations">Measurement Operations</a></li><li><a href="#array-construction-operations">Array Construction Operations</a></li><li><a href="#reshaping-operations">Reshaping Operations</a></li><li><a href="#array-generation-operations">Array Generation Operations</a></li><li><a href="#selection-operations">Selection Operations</a></li><li><a href="#insertion-operations">Insertion Operations</a></li><li><a href="#searching-operations">Searching Operations</a></li><li><a href="#nesting-restructuring-operations">Nesting Restructuring Operations</a></li><li><a href="#data-rearrangement-operations">Data Rearrangement Operations</a></li><li><a href="#string-manipulation-operations-using-regular-expressions">String Manipulation Operations using Regular Expressions</a></li></ul></li><li><a href="#chapter-4-predefined-transformers">Chapter 4 Predefined Transformers</a><ul><li><a href="#each-and-related-transformers">Each and Related Transformers</a></li><li><a href="#partitioning-transformers">Partitioning Transformers</a></li><li><a href="#applicative-transformers">Applicative Transformers</a></li><li><a href="#sorting-transformers">Sorting Transformers</a></li><li><a href="#reduction-transformers">Reduction Transformers</a></li><li><a href="#control-structure-transformers">Control Structure Transformers</a></li><li><a href="#selection-transformer">Selection Transformer</a></li></ul></li><li><a href="#chapter-5-the-formal-description-of-nial-programs">Chapter 5 The Formal Description of Nial Programs</a><ul><li><a href="#environment">Environment</a></li><li><a href="#action">Action</a></li><li><a href="#definition">Definition</a></li><li><a href="#external-declaration">External Declaration</a></li><li><a href="#remark">Remark</a></li><li><a href="#array-expression">Array Expression</a></li><li><a href="#expression-sequence">Expression Sequence</a></li><li><a href="#simple-expression">Simple Expression</a></li><li><a href="#primary-expressions">Primary Expressions</a></li><li><a href="#constant">Constant</a></li><li><a href="#variable">Variable</a></li><li><a href="#scope-of-a-variable">Scope of a Variable</a></li><li><a href="#indexed-variable">Indexed Variable</a></li><li><a href="#named-expression">Named Expression</a></li><li><a href="#expression-list">Expression List</a></li><li><a href="#parenthesized-expression-sequence">Parenthesized Expression Sequence</a></li><li><a href="#block">Block</a></li><li><a href="#local-and-nonlocal-declaration">Local and Nonlocal Declaration</a></li><li><a href="#nested-definition">Nested Definition</a></li><li><a href="#cast">Cast</a></li><li><a href="#assign-expression">Assign Expression</a></li><li><a href="#selection-expression">Selection Expression</a></li><li><a href="#loop-expression">Loop Expression</a></li><li><a href="#comment">Comment</a></li><li><a href="#operation-expression">Operation Expression</a></li><li><a href="#simple-operation">Simple Operation</a></li><li><a href="#operation-form">Operation Form</a></li><li><a href="#transformer-expression">Transformer Expression</a></li><li><a href="#transformer-form">Transformer Form</a></li><li><a href="#summary-of-juxtapositional-syntax">Summary of Juxtapositional Syntax</a></li><li><a href="#synonyms">Synonyms</a></li></ul></li><li><a href="#chapter-6-file-input-and-output-operations">Chapter 6 File Input and Output Operations</a><ul><li><a href="#sequential-files">Sequential Files</a></li><li><a href="#qnial-specific-direct-access-file-operations">Q’Nial Specific Direct Access File Operations</a></li><li><a href="#direct-access-operations-for-host-files">Direct Access Operations for Host Files</a></li></ul></li><li><a href="#chapter-7-operations-for-the-interpreter-mechanisms">Chapter 7 Operations for the Interpreter Mechanisms</a><ul><li><a href="#top-level-loop">Top Level Loop</a></li><li><a href="#picture-operations">Picture Operations</a></li><li><a href="#phrases-names-and-casts">Phrases, Names and Casts</a></li><li><a href="#dynamic-execution-of-name-associations">Dynamic Execution of Name Associations</a></li></ul></li><li><a href="#chapter-8-management-of-the-programming--environment">Chapter 8 Management of the Programming  Environment</a><ul><li><a href="#the-qnial-programming-environment">The Q’Nial Programming Environment</a></li><li><a href="#invoking-qnial">Invoking Q’Nial</a></li><li><a href="#naming-the-latest-result">Naming the Latest Result</a></li><li><a href="#session-related-expressions-and-operations">Session Related Expressions and Operations</a></li><li><a href="#restarting-a-qnial-session">Restarting a Q’Nial Session</a></li><li><a href="#ending-a-qnial-session">Ending a Q’Nial Session</a></li><li><a href="#interrupts-and-error-recovery">Interrupts and Error Recovery</a></li><li><a href="#fault-triggering">Fault Triggering</a></li><li><a href="#workspace-management">Workspace Management</a></li><li><a href="#saving-and-loading-the-workspace">Saving and Loading the Workspace</a></li><li><a href="#loading-a-definition-file">Loading a Definition File</a></li><li><a href="#setting-workspace-switches">Setting Workspace Switches</a></li><li><a href="#workspace-status">Workspace Status</a></li><li><a href="#symbol-table">Symbol Table</a></li><li><a href="#logging-the-work-of-the-session">Logging the Work of the Session</a></li><li><a href="#time-related-expressions">Time Related Expressions</a></li><li><a href="#display-related-settings">Display Related Settings</a></li><li><a href="#real-number-formatting">Real Number Formatting</a></li><li><a href="#system-related-expressions">System Related Expressions</a></li><li><a href="#host-interface-operations">Host Interface Operations</a></li><li><a href="#session-and-workspace-variables">Session and Workspace Variables</a></li></ul></li><li><a href="#chapter-9-debugging-and-profiling-nial-definitions">Chapter 9 Debugging and Profiling Nial Definitions</a><ul><li><a href="#debugging-definitions">Debugging Definitions</a></li><li><a href="#defining-a-break-point">Defining a Break Point</a></li><li><a href="#access-to-intermediate-scopes">Access to Intermediate Scopes</a></li><li><a href="#debugging-commands">Debugging Commands</a></li><li><a href="#repeating-debug-commands">Repeating Debug Commands</a></li><li><a href="#monitoring-execution-flow">Monitoring Execution Flow</a></li><li><a href="#watch-mechanism">Watch Mechanism</a></li><li><a href="#trace-mechanism">Trace Mechanism</a></li><li><a href="#profiling-capability">Profiling Capability</a></li></ul></li></ul>
 
             </nav>
           </aside>
         
-        <h1 id="the-language-definition">The Language Definition</h1>
-
-<h2 id="version-63">Version 6.3</h2>
+        <p><strong>Version 6.3</strong></p>
 
 <p><strong>August 2006</strong></p>
-
-<p><strong>Nial Systems Limited</strong></p>
-
-<p><strong>Preface</strong></p>
 
 <p>The Language Definition manual consists of nine chapters that describe
 the Nial language at a technical level and provides summary informa tion
@@ -2211,22 +2202,11 @@ Chapter 8.</p>
 loop of the Q’Nial interpreter or accepted as a group of lines by
 the operation <em>loaddefs</em>:</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td><em>&lt;action&gt;</em> ::= <em>&lt;definition-sequence&gt;</em></td>
-    </tr>
-    <tr>
-      <td>| <em>&lt;expression-sequence&gt;</em></td>
-    </tr>
-    <tr>
-      <td>| <em>&lt;external-declaration&gt;</em></td>
-    </tr>
-    <tr>
-      <td>| <em>&lt;remark&gt;</em></td>
-    </tr>
-  </tbody>
-</table>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;action&gt; ::= &lt;definition-sequence&gt;
+          | &lt;expression-sequence&gt;
+          | &lt;external-declaration\&gt;
+          | &lt;remark&gt;
+</code></pre></div></div>
 
 <p>If an action is a <em>&lt;definition-sequence&gt;</em>, its definitions are installed
 in the global environment.</p>
@@ -2243,35 +2223,12 @@ it is completely specified.</p>
 
 <h2 id="definition">Definition</h2>
 
-<table>
-  <tbody>
-    <tr>
-      <td><em>&lt;definition-sequence&gt;</em> ::= <em>&lt;definition&gt;</em> {<strong>\;</strong> <em>&lt;definition&gt;</em> } [<strong>\;</strong>]</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><em>&lt;definition&gt;</em> ::= <em>&lt;identifier&gt;</em> <strong>IS</strong></td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>( <em>&lt;simple-expression&gt;</em></td>
-      <td><em>&lt;operation-expression&gt;</em></td>
-      <td><em>&lt;transformer-expression&gt;</em> )</td>
-    </tr>
-    <tr>
-      <td>| <em>&lt;comment&gt;</em></td>
-      <td> </td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;definition-sequence&gt; ::= &lt;definition&gt; {; &lt;definition&gt;}* [;]
+   
+*\&lt;definition\&gt;* ::= *\&lt;identifier\&gt;* **IS**
+                 ( *\&lt;simple-expression\&gt;* | *\&lt;operation-expression\&gt;* | *\&lt;transformer-expression\&gt;* )
+                \| *\&lt;comment\&gt;*
+</code></pre></div></div>
 
 <p>Every well formed program fragment that can appear on the right of
 the keyword <strong>IS</strong> in a definition is interpreted to be one of the
@@ -6115,17 +6072,6 @@ Dictionary</em>.</p>
     </div>
 
     
-      <div class="search-content">
-        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
-    <label class="sr-only" for="search">
-      Enter your search term...
-    </label>
-    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
-  </form>
-  <div id="results" class="results"></div></div>
-
-      </div>
-    
 
     <div id="footer" class="page__footer">
       <footer>
@@ -6155,25 +6101,21 @@ Dictionary</em>.</p>
     
 
     
-      <li><a href="/Nial_Development/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
     
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2021 John Gibbons. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2022 John Gibbons. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>. Photo by <a href="https://unsplash.com/@thenata?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Anastasia Taioglou</a> on <a href="https://unsplash.com/s/photos/ocean?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
 
       </footer>
     </div>
 
     
-  <script src="/Nial_Development/assets/js/main.min.js"></script>
+  <script src="/assets/js/main.min.js"></script>
 
 
 
-
-<script src="/Nial_Development/assets/js/lunr/lunr.min.js"></script>
-<script src="/Nial_Development/assets/js/lunr/lunr-store.js"></script>
-<script src="/Nial_Development/assets/js/lunr/lunr-en.js"></script>
 
 
 
